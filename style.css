@@ -373,6 +373,54 @@ img {
     transition: .2s;
 }
 
+/* Social Icons Styling */
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icon {
+    font-size: 2.5em; /* Base size for icons */
+    margin: 0 15px; /* Spacing between icons */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    display: inline-block; /* Allows transform effects */
+}
+
+/* Instagram Icon */
+.social-icon.instagram {
+    color: #E1306C; /* Instagram gradient start color */
+    background: linear-gradient(45deg, #E1306C, #F77737); /* Instagram-like gradient */
+    -webkit-background-clip: text; /* Clip gradient to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+}
+
+.social-icon.instagram:hover {
+    transform: scale(1.2); /* Slight grow effect */
+    color: #E1306C; /* Solid color on hover */
+    -webkit-text-fill-color: #E1306C; /* Override gradient on hover */
+}
+
+/* WhatsApp Icon */
+.social-icon.whatsapp {
+    color: #25D366; /* WhatsApp green */
+}
+
+.social-icon.whatsapp:hover {
+    transform: scale(1.2); /* Slight grow effect */
+    color: #128C7E; /* Darker green on hover */
+}
+
+/* Phone Icon */
+.social-icon.phone {
+    color: #007BFF; /* Pleasant blue */
+}
+
+.social-icon.phone:hover {
+    transform: scale(1.2); /* Slight grow effect */
+    color: #0056b3; /* Darker blue on hover */
+}
+
 /* Footer Section Styling */
 .site-footer {
     position: relative;
