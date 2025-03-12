@@ -4,191 +4,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover luxurious perfumes at VICKYBLINDER. Shop fresh, zesty summer scents and more.">
+    <meta name="keywords" content="perfume shop, summer fragrances, VICKYBLINDER">
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <!-- Stylesheet Link -->
     <link rel="stylesheet" href="style.css">
-
-    <title>VICKYBLINDER | Perfume Shop</title>
+    <title>VICKYBLINDER | Premium Perfume Shop</title>
 </head>
 
 <body>
     <div class="wrapper">
+        <!-- Limited Time Offer Banner -->
+        <div class="offer-banner">
+            <p>20% OFF This Week Only! Use Code: SUMMER20</p>
+        </div>
+
         <main class="main-content">
+            <!-- Hero Section -->
             <div id="hero" class="hero">
+                <img src="assets/images/logo.png" alt="VICKYBLINDER Logo" class="logo">
                 <h1>VICKYBLINDER</h1>
-                <p>When summer arrives, the season calls for a lighter, fresher and some may say even a zestier summer
-                    fragrance to match
-                    the mood of the time of the year. Try one of our new perfumes that are perfect for the sun-drenched
-                    months.</p>
+                <p>Unleash your essence with our luxurious summer fragrances—crafted for sun-drenched moments.</p>
+                <a href="#fragrance-finder" class="cta-button">Find Your Scent</a>
             </div>
 
+            <!-- Navbar -->
             <div class="navbar">
                 <div class="nav-item">
                     <ul>
                         <li><a href="#hero"><i class="fas fa-home"></i> Home</a></li>
                         <li><a href="#featured"><i class="fa fa-fire"></i> Featured</a></li>
                         <li><a href="#products"><i class="fa fa-spray-can"></i> Products</a></li>
-                        <li><a href="#testimonial"><i class="fa fa-quote-left"></i> Testimonial</a></li>
+                        <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="#testimonial"><i class="fa fa-quote-left"></i> Testimonials</a></li>
                         <li><a href="#contact"><i class="fas fa-address-card"></i> Contact</a></li>
                     </ul>
+                    <input type="text" placeholder="Search perfumes..." class="search-bar">
                 </div>
             </div>
+
+            <!-- Fragrance Finder -->
+            <div id="fragrance-finder" class="fragrance-finder">
+                <h2>Find Your Perfect Scent</h2>
+                <p>Answer a few questions to discover your ideal fragrance.</p>
+                <form id="finder-form">
+                    <label for="preference">I prefer scents that are:</label>
+                    <select id="preference" required>
+                        <option value="">Select...</option>
+                        <option value="floral">Floral</option>
+                        <option value="woody">Woody</option>
+                        <option value="citrus">Citrus</option>
+                    </select>
+                    <label for="occasion">For what occasion?</label>
+                    <select id="occasion" required>
+                        <option value="">Select...</option>
+                        <option value="daily">Daily Wear</option>
+                        <option value="special">Special Events</option>
+                    </select>
+                    <button type="submit">Discover</button>
+                </form>
+                <div id="finder-result"></div>
+            </div>
+
+            <!-- Featured Products -->
             <div id="featured">
-                <h2>Featured Products</h2>
-                <p>Our products are being loved by our customers.</p>
+                <h2>Featured Collections</h2>
+                <p>Handpicked favorites loved by our community.</p>
                 <div class="featured-product">
                     <div class="featured-one">
-                        <img src="assets/images/blue.png" alt="" class="featured-image">
+                        <img src="assets/images/blue.png" alt="Blue Perfume" class="featured-image">
                         <div class="featured-description">
                             <p>
-                                <b>Product Name:</b> The Man Company Body Perfume.
-                                <br>
-                                <b>Offer Price:</b> <del>Sh 30</del> Sh 24.00
-                                <br>
-                                <b>Color:</b> Blue.
+                                <b>Summer Breeze</b><br>
+                                <b>Price:</b> <del>KES 3000</del> KES 2400<br>
+                                <b>Notes:</b> Top: Lemon, Middle: Lavender, Base: Musk
                             </p>
                         </div>
-                        <a href="#" class="buynow">Buy Now</a>
+                        <button class="add-to-cart" data-id="1">Add to Cart</button>
+                        <a href="#" class="wishlist"><i class="fas fa-heart"></i></a>
                     </div>
                     <div class="featured-two">
-                        <img src="assets/images/gold.png" alt="" class="featured-image">
+                        <img src="assets/images/gold.png" alt="Gold Perfume" class="featured-image">
                         <div class="featured-description">
                             <p>
-                                <b>Product Name:</b> The Man Company Body Perfume.
-                                <br>
-                                <b>Offer Price:</b> <del> Sh 30</del> Sh 24.50
-                                <br>
-                                <b>Color:</b> Golden.
+                                <b>Golden Aura</b><br>
+                                <b>Price:</b> <del>KES 3000</del> KES 2450<br>
+                                <b>Notes:</b> Top: Bergamot, Middle: Rose, Base: Amber
                             </p>
                         </div>
-                        <a href="#" class="buynow">Buy Now</a>
+                        <button class="add-to-cart" data-id="2">Add to Cart</button>
+                        <a href="#" class="wishlist"><i class="fas fa-heart"></i></a>
                     </div>
                     <div class="featured-three">
-                        <img src="assets/images/black.jpg" alt="" class="featured-image">
+                        <img src="assets/images/black.jpg" alt="Black Perfume" class="featured-image">
                         <div class="featured-description">
                             <p>
-                                <b>Product Name:</b> The Man Company Body Perfume.
-                                <br>
-                                <b>Offer Price:</b> <del>Sh30</del> Sh22.50
-                                <br>
-                                <b>Color:</b> black.
+                                <b>Midnight Veil</b><br>
+                                <b>Price:</b> <del>KES 3000</del> KES 2250<br>
+                                <b>Notes:</b> Top: Pepper, Middle: Cedar, Base: Vanilla
                             </p>
                         </div>
-                        <a href="#" class="buynow">Buy Now</a>
+                        <button class="add-to-cart" data-id="3">Add to Cart</button>
+                        <a href="#" class="wishlist"><i class="fas fa-heart"></i></a>
                     </div>
                 </div>
             </div>
+
+            <!-- Icon Box Section -->
             <div class="icon-box-section">
-                <div class="icon1 icon">
-                    <i class="fas fa-globe-americas"></i>
-                    <h3>All Over The World</h3>
-
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque quos ipsa iste animi doloribus,
-                        nam odit inventore magni quidem voluptatum placeat, rerum vero nemo quis ex? Minus ullam
-                        accusamus consectetur!</p>
-                </div>
-                <div class="icon2 icon"><i class="fas fa-dollar-sign"></i>
-                    <h3>Money Back Guarantee</h3>
-
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque quos ipsa iste animi doloribus,
-                        nam odit inventore magni quidem voluptatum placeat, rerum vero nemo quis ex? Minus ullam
-                        accusamus consectetur!</p>
-                </div>
-                <div class="icon3 icon"><i class="fas fa-shipping-fast"></i>
-                    <h3>Fast & Free Shipping</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque quos ipsa iste animi doloribus,
-                        nam odit inventore magni quidem voluptatum placeat, rerum vero nemo quis ex? Minus ullam
-                        accusamus consectetur!</p>
-                </div>
+                <div class="icon"><i class="fas fa-globe-americas"></i><h3>Worldwide Shipping</h3><p>Delivered to your doorstep, anywhere.</p></div>
+                <div class="icon"><i class="fas fa-dollar-sign"></i><h3>Money Back Guarantee</h3><p>Shop with confidence.</p></div>
+                <div class="icon"><i class="fas fa-shipping-fast"></i><h3>Fast & Free Shipping</h3><p>Free on orders over KES 5000.</p></div>
             </div>
+
             <!-- Products Section -->
             <div id="products">
-                <h2>Our Best Product</h2>
-                <p>We provide best products for our customers.</p>
-
+                <h2>Explore Our Range</h2>
+                <p>Curated scents for every soul.</p>
                 <div class="products-grid">
-                    <img src="assets/images/product1.png">
-                    <img src="assets/images/product2.png">
-                    <img src="assets/images/product3.png">
-                    <div class="second-grid">
-                        <img src="assets/images/product4.png">
-                        <img src="assets/images/product5.png">
-                        <img src="assets/images/product6.png">
+                    <div class="product-item">
+                        <img src="assets/images/product1.png" alt="Product 1">
+                        <p>Sunlit Citrus - KES 2000</p>
+                        <button class="add-to-cart" data-id="4">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/images/product2.png" alt="Product 2">
+                        <p>Floral Whisper - KES 2200</p>
+                        <button class="add-to-cart" data-id="5">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/images/product3.png" alt="Product 3">
+                        <p>Woody Embrace - KES 2300</p>
+                        <button class="add-to-cart" data-id="6">Add to Cart</button>
                     </div>
                 </div>
             </div>
+
+            <!-- About Us Section -->
+            <div id="about">
+                <h2>About VICKYBLINDER</h2>
+                <p>Born from a passion for capturing life's moments in scent, VICKYBLINDER crafts premium fragrances that blend nature’s finest essences with modern elegance. Every bottle tells a story—yours to wear.</p>
+            </div>
+
             <!-- Testimonial Section -->
             <div id="testimonial">
                 <h2>What Our Clients Say</h2>
-                <p>We provide best products for our customers.</p>
+                <p>Real stories from our fragrance family.</p>
                 <div class="customers customer1">
                     <i class="fas fa-quote-left quote-icon"></i>
-                    <img src="assets/images/customer1.jpg">
-                    <h3>Best Fragnance!</h3>
-
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque fugiat provident dolorem
-                        veritatis mollitia aspernatur dolor sequi laborum in. Enim minima numquam pariatur quos
-                        voluptatem hic soluta molestias quis consequatur.</p>
+                    <img src="assets/images/customer1.jpg" alt="Customer 1">
+                    <h3>Best Fragrance!</h3>
+                    <p>Summer Breeze is my daily go-to—fresh and uplifting!</p>
+                    <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                     <i class="fas fa-quote-right quote-icon"></i>
-
                 </div>
-                <div class="customers customer2 ">
-                    <i class="fas fa-quote-left quote-icon "></i>
-                    <img src="assets/images/customer2.png">
+                <div class="customers customer2">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <img src="assets/images/customer2.png" alt="Customer 2">
                     <h3>Thank You!</h3>
-
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque fugiat provident dolorem
-                        veritatis mollitia aspernatur dolor sequi laborum in. Enim minima numquam pariatur quos
-                        voluptatem hic soluta molestias quis consequatur.</p>
-                    <i class="fas fa-quote-right quote-icon "></i>
+                    <p>Golden Aura makes me feel like royalty.</p>
+                    <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+                    <i class="fas fa-quote-right quote-icon"></i>
                 </div>
                 <div class="customers customer3">
                     <i class="fas fa-quote-left quote-icon"></i>
-                    <img src="assets/images/customer3.png">
+                    <img src="assets/images/customer3.png" alt="Customer 3">
                     <h3>I'm Impressed!</h3>
-
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque fugiat provident dolorem
-                        veritatis mollitia aspernatur dolor sequi laborum in. Enim minima numquam pariatur quos
-                        voluptatem hic soluta molestias quis consequatur.</p>
+                    <p>Midnight Veil is bold and unforgettable.</p>
+                    <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                     <i class="fas fa-quote-right quote-icon"></i>
                 </div>
             </div>
+
             <!-- Contact Section -->
             <div id="contact">
                 <h2>Contact Us</h2>
-                <p>Feel free to send us a message about anything. We always appreciate you.</p>
-
+                <p>Questions? We’re here to help.</p>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/vicky_blinder/" target="_blank" class="social-icon instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://wa.me/0796681150" target="_blank" class="social-icon whatsapp">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="tel:+254796681150" class="social-icon phone">
-                        <i class="fas fa-phone"></i>
-                    </a>
+                    <a href="https://www.instagram.com/vicky_blinder/" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/0796681150" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="tel:+254796681150" class="social-icon phone"><i class="fas fa-phone"></i></a>
                 </div>
-                <form>
-                    <label for="name">Name</label> <br>
-                    <input type="text" name="" id="name" placeholder="Enter your name" required>
-                    <br>
-                    <label for="email">Email</label> <br>
-                    <input type="email" name="" id="email" placeholder="Enter your email" required>
-                    <br>
+                <form id="contact-form">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" placeholder="Enter your name" required><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" placeholder="Enter your email" required><br>
                     <label for="message">Message</label><br>
-                    <textarea name="" id="message" placeholder="Enter your message" required></textarea>
-                    <br>
+                    <textarea id="message" placeholder="Enter your message" required></textarea><br>
                     <button type="submit">Send</button>
                 </form>
-                <br><br>
+                <form id="newsletter-form">
+                    <label for="newsletter-email">Join Our Newsletter</label><br>
+                    <input type="email" id="newsletter-email" placeholder="Get updates on new scents" required>
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
         </main>
-        <footer class="site-footer">Copyright ©2025 | All rights reserved | Created by VICKYBLINDER</footer>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="trust-badges">
+                <span><i class="fas fa-check-circle"></i> 100% Authentic</span>
+                <span><i class="fas fa-leaf"></i> Cruelty-Free</span>
+                <span><i class="fas fa-lock"></i> Secure Checkout</span>
+            </div>
+            <p>Copyright ©2025 | All rights reserved | Created by VICKYBLINDER</p>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+        <!-- Cart Display -->
+        <div id="cart" class="cart">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <p>Total: KES <span id="cart-total">0</span></p>
+            <button id="checkout">Checkout</button>
+        </div>
     </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 
 </html>
