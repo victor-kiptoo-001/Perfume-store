@@ -20,8 +20,8 @@ p, span, b, i, label, input, textarea, ::placeholder { font-family: 'Open Sans',
 img { width: 100%; border-radius: .5rem; }
 ::selection { background-color: #023E8A; color: #fff; }
 
-/* Offer Banner */
-.offer-banner {
+/* Banner */
+.banner {
     background-color: #FFD700; /* Gold accent */
     color: #023E8A;
     padding: 10px;
